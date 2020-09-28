@@ -60,3 +60,7 @@ def countBySender(arr_msgs_dicts):
     )}
 
     return sorted_dict
+
+def participants(arr_msgs_dicts):
+
+    return set(map(lambda x: x.get('name'), arr_msgs_dicts))
